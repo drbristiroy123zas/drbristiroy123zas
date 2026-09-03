@@ -676,6 +676,18 @@ em {
   background: var(--surface-2);
   box-shadow: var(--shadow-md);
 }
+
+/* Light deterrent against casual saving of the portrait: not draggable,
+   not selectable, and the image itself ignores pointer events so a
+   right-click / long-press has no "Save image" target. Not real
+   protection — the file is still at a public URL. */
+.portrait img,
+.profile__photo img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
 .portrait figcaption {
   margin-top: 0.9rem;
   font-size: 0.8rem;
@@ -1080,6 +1092,9 @@ em {
   padding: 2.5rem;
 }
 .contact-grid__aside h3 {
+  color: #fff;
+}
+.contact-grid__aside strong {
   color: #fff;
 }
 .contact-grid__aside a {

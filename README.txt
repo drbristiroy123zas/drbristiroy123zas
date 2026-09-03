@@ -29,6 +29,14 @@ The <header class="site-header"> and <footer class="site-footer"> blocks are
 identical on every page (marked with comments). If you change one, change it on
 all pages. Only the nav link with aria-current="page" differs per page.
 
+Portrait
+--------
+The portrait has a light anti-save deterrent (no drag, no selection, the image
+ignores pointer events so right-click / long-press finds no "Save image"
+target). This is friction only - the file still lives at a public URL and
+screenshots always work. For real protection, replace portrait.jpg with a
+lower-resolution export and/or a watermarked version.
+
 Parallax
 --------
 Any element with data-parallax="0.2" drifts as its section scrolls. The number is
