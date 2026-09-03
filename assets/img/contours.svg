@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" fill="none" preserveAspectRatio="xMidYMid slice">
+  <g stroke="#0f4c5c" stroke-width="2" fill="none">
+    <circle cx="600" cy="600" r="120"/>
+    <circle cx="600" cy="600" r="210"/>
+    <circle cx="600" cy="600" r="300"/>
+    <circle cx="600" cy="600" r="395"/>
+    <circle cx="600" cy="600" r="495"/>
+    <circle cx="600" cy="600" r="600"/>
+    <circle cx="600" cy="600" r="710"/>
+  </g>
+</svg>
