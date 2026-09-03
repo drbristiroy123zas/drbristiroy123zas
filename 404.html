@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found | Dr. Oendrila Roy</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#0f4c5c" />
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="Dr. Oendrila Roy — home">
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="currentColor" />
+            <path d="M8 34h11l5-13 8 24 6-16 4 9h6" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>
+            <span class="brand__name">Dr. Oendrila Roy</span>
+            <span class="brand__role">Critical Care &amp; ECMO</span>
+          </span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+          </svg>
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav class="nav" id="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="clinical-expertise.html">Expertise</a>
+          <a href="patient-information.html">Patient Information</a>
+          <a href="research-publications.html">Research</a>
+          <a class="nav__cta" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section container container--narrow prose" style="min-height: 50vh">
+        <span class="kicker">Error 404</span>
+        <h1>This page could not be found</h1>
+        <p>The address may be mistyped, or the page may have moved. From here you can:</p>
+        <ul>
+          <li><a href="index.html">Return to the homepage</a></li>
+          <li><a href="clinical-expertise.html">Read about clinical expertise</a></li>
+          <li><a href="patient-information.html">Browse patient information</a></li>
+          <li><a href="contact.html">Get in touch</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <h4>Dr. Oendrila Roy</h4>
+          <p>
+            Consultant in Critical Care Medicine &amp; ECMO Services,<br />
+            Apollo Multispeciality Hospitals, Kolkata, West Bengal, India.
+          </p>
+          <div class="footer-map">
+            <iframe
+              title="Map — Apollo Multispeciality Hospitals, Kolkata"
+              src="https://www.google.com/maps?q=Apollo%20Multispeciality%20Hospitals%2C%2058%20Canal%20Circular%20Road%2C%20Kadapara%2C%20Kolkata%20700054&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Apollo%20Multispeciality%20Hospitals%20Kolkata"
+              target="_blank"
+              rel="noopener"
+              >Open in Google Maps &rarr;</a
+            >
+          </div>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="clinical-expertise.html">Clinical expertise</a></li>
+            <li><a href="patient-information.html">Patient information</a></li>
+            <li><a href="research-publications.html">Research &amp; publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Professional</h4>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/dr-oendrila-roy-448276230/" target="_blank" rel="noopener">LinkedIn</a>
+            </li>
+            <li>
+              <!-- TODO: replace href with the real Facebook page URL -->
+              <a href="#" class="to-confirm">Facebook (add link)</a>
+            </li>
+            <li>
+              <a href="https://orcid.org/0009-0003-8852-9370" target="_blank" rel="noopener">ORCID</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bar">
+        <span>&copy; 2026 Dr. Oendrila Roy. All rights reserved.</span>
+        <span>Informational website. Not a substitute for medical advice or emergency care.</span>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var btn = document.getElementById('nav-toggle');
+        var nav = document.getElementById('nav');
+        if (btn && nav) {
+          btn.addEventListener('click', function () {
+            var open = nav.getAttribute('data-open') === 'true';
+            nav.setAttribute('data-open', String(!open));
+            btn.setAttribute('aria-expanded', String(!open));
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
